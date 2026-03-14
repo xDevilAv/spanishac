@@ -4,41 +4,42 @@ permalink: /en/Items
 published: true
 ---
 
-# Catastrophic Bleeding
+# Hemorragia Catastrófica
 
 {% include git-wiki/components/template/table_bleeding_management.html %}
 
-# Airway Management
+# Manejo de la Vía Aérea
 
 {% include git-wiki/components/template/table_airway_management.html %}
 
-# Breathing
+# Respiración
 
 {% include git-wiki/components/template/table_breathing.html %}
 
-# Circulation
+# Circulación
 
 {% include git-wiki/components/template/table_circulation.html %}
 
-## Fluid Transfusion
+## Transfusión de Fluidos
 
 {% include git-wiki/components/template/table_fluid_transfusion.html %}
 
-## Medication
-### Liquid Medication
-Liquid Medications come in pre-filled single use vials, size of vial and concentration of the contents depend on the specific medication and its intended use.
+## Medicación
 
-Liquid medication is administered intramuscularly or intravenously with syringes, with certain medications only having a theraputic effect if administered via specific route.
+### Medicación Líquida
+Los medicamentos líquidos vienen en viales precargados de un solo uso. El tamaño del vial y la concentración del contenido dependen del medicamento específico y de su uso previsto.
+
+La medicación líquida se administra por vía intramuscular o intravenosa mediante jeringas. Algunos medicamentos solo tienen efecto terapéutico si se administran por una vía específica.
 
 {% include git-wiki/components/template/table_liquid_medication.html %}
 
-### Packaged Medication
-Packaged Medication come in various shapes or inside devices with a pre-designated dose of the medication.
+### Medicación Envasada
+La medicación envasada se presenta en diferentes formatos o dentro de dispositivos con una dosis predefinida del medicamento.
 
-These medication devices are designed to be easily self-administered or given in an emergency.
+Estos dispositivos están diseñados para poder administrarse fácilmente por uno mismo o para ser utilizados rápidamente en situaciones de emergencia.
 
 {% include git-wiki/components/template/table_packaged_medication.html %}
 
-# Disability
+# Discapacidad
 
 {% include git-wiki/components/template/table_disability.html %}
