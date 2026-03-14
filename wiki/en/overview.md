@@ -31,13 +31,13 @@ Las vendas también pueden utilizarse para tratar contusiones y para estabilizar
 
 ### Coagulación
 {:.no_toc}
-{% include git-wiki/components/template/link_note.html text="Ver también: [Coagulation](#coagulation)" %}
+{% include git-wiki/components/template/link_note.html text="Ver también: [Coagulción](#coagulación)" %}
 Las heridas con sangrado leve tienen la posibilidad de coagular por sí solas.
 
 Los coágulos pueden hacerse más duraderos con TXA; la mayoría son inestables y es probable que vuelvan a abrirse, por lo que deberían envolverse o suturarse cuando sea posible.
 
 ## Heridas Internas
-{% include git-wiki/components/template/link_note.html text="Ver: [Internal Bleeding](#internal-bleeding)" %}
+{% include git-wiki/components/template/link_note.html text="Ver: [Hemorragia Interna](#Hemorragiainterna)" %}
 
 # Vía Aérea
 ## Pérdida de reflejos
