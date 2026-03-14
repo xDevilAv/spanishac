@@ -1,0 +1,30 @@
+<table style="width:fit-content;">
+    <tr>
+        <th style="padding-left:5px;padding-right:5px;">Item</th>
+        <th style="padding-left:5px;padding-right:5px;">Type</th>
+        <th style="padding-left:5px;padding-right:5px;">Use</th>
+        <th style="padding-left:5px;padding-right:5px;">Condition</th>
+        <th style="padding-left:5px;padding-right:5px;">Weight</th>
+    </tr>
+{% for entry in site.pages %}
+    {% if entry.page_category contains 'fluid_transfusion' %}
+    <tr>
+        <td style="text-align:left;">
+            {% include git-wiki/components/template/section_table_item.html image=entry.infobox_image name=entry.title multiitem=entry.infobox_item_multiitem variants=entry.infobox_item_multiitem_variants %}
+        </td>
+        <td>
+            {{ entry.infobox_item_type }}
+        </td>
+        <td style="text-align:left;">
+            {{ entry.export_use }}
+        </td>
+        <td style="text-align:left;">
+            {{ entry.export_condition }}
+        </td>
+        <td style="text-align:left;">
+            {% include git-wiki/components/infobox/section_weight.html weight=entry.infobox_item_weight weights=entry.infobox_item_weights %}
+        </td>
+    </tr>
+    {% endif %}
+{% endfor %}
+</table>

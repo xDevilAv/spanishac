@@ -1,0 +1,91 @@
+<table style="width:fit-content;">
+    <tr>
+        <th style="padding-left:5px;padding-right:5px;">Medication</th>
+        <th style="padding-left:5px;padding-right:5px;">Use</th>
+        <th style="padding-left:5px;padding-right:5px;">Access</th>
+        <th style="padding-left:5px;padding-right:5px;">Contents</th>
+        <th style="padding-left:5px;padding-right:5px;">Concentration</th>
+        <th style="padding-left:5px;padding-right:5px;">Dose Range</th>
+        <th style="padding-left:5px;padding-right:5px;">Onset</th>
+        <th style="padding-left:5px;padding-right:5px;">Peak</th>
+        <th style="padding-left:5px;padding-right:5px;">Duration</th>
+        <th style="padding-left:5px;padding-right:5px;"><abbr title="Heart Rate">HR</abbr></th>
+        <th style="padding-left:5px;padding-right:5px;"><abbr title="Blood Pressure">BP</abbr></th>
+        <th style="padding-left:5px;padding-right:5px;"><abbr title="Respiration Rate">RR</abbr></th>
+        <th style="padding-left:5px;padding-right:5px;">Pain Relief</th>
+        <th style="padding-left:5px;padding-right:5px;">Nausea</th>
+    </tr>
+{% for entry in site.pages %}
+    {% if entry.page_category contains 'liquid_medication' %}
+    <tr>
+        <td style="text-align:left;width:fit-content;padding:4px;">
+            <img src="{{ entry.infobox_image | relative_url }}" height="50"> <a href="{{ entry.title }}">{{ entry.title }}</a>
+        </td>
+        <td style="text-align:left;">
+            {{ entry.export_use }}
+        </td>
+        <td>
+            {% include git-wiki/components/infobox/section_med_route.html is_autoinjector=entry.infobox_med_autoinjector route=entry.infobox_med_route has_iv=entry.infobox_med_iv has_im=entry.infobox_med_im %}
+        </td>
+        <td>
+            {% include git-wiki/components/infobox/section_med_contents_concentration.html is_micro=entry.infobox_vial_contents_micro contents=entry.infobox_vial_contents container_size=entry.infobox_vial_size %}
+        </td>
+        <td>
+            {% include git-wiki/components/infobox/section_med_concentration.html is_micro=entry.infobox_vial_contents_micro contents=entry.infobox_vial_contents container_size=entry.infobox_vial_size %}
+        </td>
+        <td style="text-align:left;">
+            {% if entry.export_doserange %}
+                {{ entry.export_doserange }}
+            {% else %}
+                {{ entry.infobox_med_dose }}
+            {% endif %}
+        </td>
+        <td>
+            {% if entry.infobox_med_iv and entry.infobox_med_im and entry.infobox_med_iv_onset and entry.infobox_med_im_onset %}
+                {{ entry.infobox_med_iv_onset }} | {{ entry.infobox_med_im_onset }}
+            {% else %}
+                {{ entry.infobox_med_iv_onset }}{{ entry.infobox_med_im_onset }}
+            {% endif %}
+        </td>
+        <td>
+            {% if entry.infobox_med_iv and entry.infobox_med_im and entry.infobox_med_iv_peak and entry.infobox_med_im_peak %}
+                {{ entry.infobox_med_iv_peak }} | {{ entry.infobox_med_im_peak }}
+            {% else %}
+                {{ entry.infobox_med_iv_peak }}{{ entry.infobox_med_im_peak }}
+            {% endif %}
+        </td>
+        <td>
+            {% if entry.infobox_med_iv and entry.infobox_med_im and entry.infobox_med_iv_duration and entry.infobox_med_im_duration %}
+                {{ entry.infobox_med_iv_duration }} | {{ entry.infobox_med_im_duration }}
+            {% else %}
+                {{ entry.infobox_med_iv_duration }}{{ entry.infobox_med_im_duration }}
+            {% endif %}
+        </td>
+        <td style="padding:2px;width:54px;font-size:16px;font-weight:bold;">
+            {% if entry.infobox_med_effect_hr %}
+            {% if entry.infobox_med_effect_hr_route %}<span style="font-size:12px;vertical-align:text-top;">({{ entry.infobox_med_effect_hr_route }})</span>{% endif %}
+            <span style="letter-spacing:-1px;">{% include git-wiki/components/infobox/section_effect_strength.html strength=entry.infobox_med_effect_hr %}</span>
+            {% endif %}
+        </td>
+        <td style="padding:2px;width:54px;font-size:16px;font-weight:bold;">
+            {% if entry.infobox_med_effect_bp %}
+            {% if entry.infobox_med_effect_bp_route %}<span style="font-size:12px;vertical-align:text-top;">({{ entry.infobox_med_effect_bp_route }})</span>{% endif %}
+            <span style="letter-spacing:-1px;">{% include git-wiki/components/infobox/section_effect_strength.html strength=entry.infobox_med_effect_bp %}</span>
+            {% endif %}
+        </td>
+        <td style="padding:2px;width:54px;font-size:16px;font-weight:bold;">
+            {% if entry.infobox_med_effect_rr %}
+            {% if entry.infobox_med_effect_rr_route %}<span style="font-size:12px;vertical-align:text-top;">({{ entry.infobox_med_effect_rr_route }})</span>{% endif %}
+            <span style="letter-spacing:-1px;">{% include git-wiki/components/infobox/section_effect_strength.html strength=entry.infobox_med_effect_rr %}</span>
+            {% endif %}
+        </td>
+        <td>
+            {{ entry.infobox_med_pain }}
+        </td>
+        <td>
+            {{ entry.infobox_med_nausea }}
+        </td>
+    </tr>
+    {% endif %}
+{% endfor %}
+</table>

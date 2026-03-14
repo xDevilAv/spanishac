@@ -1,0 +1,304 @@
+{% comment %}
+{% include git-wiki/components/infobox/item_infobox.html %}
+
+title_long: string
+title_short: string
+
+export_use: string
+export_condition: string
+export_doserange: string
+
+infobox_image: "/wiki/image/xyz.png"
+infobox_images: array, require:infobox_item_multiitem
+
+infobox_use_category: airway/advanced/medication/bandage
+infobox_use_category2: airway/advanced/medication/bandage
+infobox_use_selection: head/arms/limbs/torso/upper/body/all
+
+infobox_item_multiitem: bool
+infobox_item_multiitem_variants: array, require:infobox_item_multiitem
+
+infobox_item_type: string
+infobox_item_usecount 0/1/>2
+
+infobox_item_weight: string, kg | lb
+infobox_item_weights: array, string, kg | lb
+
+infobox_item_classname: string
+infobox_item_classnames: array, require:infobox_item_multiitem
+
+infobox_item_nonmedication: bool
+
+infobox_vial_type: string, "Ampule" for dimercaprol
+
+infobox_vial_size: int
+infobox_vial_contents: int
+infobox_vial_contents_micro: bool, use mcg instead of mg
+
+infobox_med_dose: string
+infobox_med_dose_multi: bool, different doses based on use case
+infobox_med_dose_checknote: bool, check dose section
+
+infobox_med_autoinjector: bool
+
+infobox_med_iv: bool
+infobox_med_iv_onset: string
+infobox_med_iv_peak:  string
+infobox_med_iv_duration:  string
+
+infobox_med_im: bool
+infobox_med_im_onset: string
+infobox_med_im_peak: string
+infobox_med_im_duration: string
+
+infobox_med_effect_hr: string
+infobox_med_effect_hr_route: string, use if effect specific to route
+infobox_med_effect_bp: string
+infobox_med_effect_bp_route: string, use if effect specific to route
+infobox_med_effect_rr: string
+infobox_med_effect_rr_route: string, use if effect specific to route
+
+infobox_med_pain: string
+infobox_med_nausea: string
+
+{% endcomment %}
+<table class="infobox" style="float:right;">
+    <tr>
+        <th colspan="2" style="font-size:22px;">
+            {% unless include.name %}
+                {{ page.title }}
+            {% else %}
+                {{ include.name }}
+            {% endunless %}
+            {% if page.infobox_item_multiitem %}<br>
+            <span style="font-size:16px;">(
+                {%- for text in page.infobox_item_multiitem_variants %}
+                {{- text }}{% unless forloop.last %} | {% endunless -%}
+                {% endfor -%}
+            )</span>
+            {% endif %}
+        </th>
+    </tr>
+    <tr>
+        <td colspan="2">
+            {% if page.infobox_images %}
+                {% for image in page.infobox_images %}
+                    <img src="{{ image | relative_url }}" height="150"><br>
+                {% endfor %}
+            {% else %}
+            <img src="{{ page.infobox_image | relative_url }}" height="150">
+            {% endif %}
+        </td>
+    </tr>
+    <tr class="infobox-header">
+        <td colspan="2">Item</td>
+    </tr>
+    <tr>
+        <td colspan="2" style="padding:0;">
+            <table class="infobox-inline-table">
+                {% if page.infobox_item_type %}
+                <tr class="infobox-row">
+                    <td class="infobox-row-title-itable-f">Type</td>
+                    <td class="infobox-row-itable-f" style="padding:5px 0 5px 0;">{{ page.infobox_item_type }}</td>
+                </tr>
+                {% endif %}
+                <tr class="infobox-row">
+                    {% if page.infobox_item_type %}<td class="infobox-row-title-itable">{% else %}<td class="infobox-row-title-itable-f">{% endif %}Category</td>
+                    {% if page.infobox_item_type %}<td class="infobox-row-itable" style="padding:5px 0 5px 0;">{% else %}<td class="infobox-row-itable-f" style="padding:5px 0 5px 0;">{% endif %}
+                        {% include git-wiki/components/infobox/section_category.html category=page.infobox_use_category category2=page.infobox_use_category2 %}
+                    </td>
+                </tr>
+                <tr class="infobox-row">
+                    <td class="infobox-row-title-itable">Action Access</td>
+                    <td class="infobox-row-itable">
+                        {% include git-wiki/components/infobox/section_targetpart.html selection=page.infobox_use_selection %}
+                    </td>
+                </tr>
+                <tr class="infobox-row">
+                    <td class="infobox-row-title-itable">Use Count</td>
+                    <td class="infobox-row-itable">
+                        {% include git-wiki/components/infobox/section_usecount.html usecount=page.infobox_item_usecount %}
+                    </td>
+                </tr>
+                <tr class="infobox-row">
+                    <td class="infobox-row-title-itable">Weight</td>
+                    <td class="infobox-row-itable">
+                        {% include git-wiki/components/infobox/section_weight.html weight=page.infobox_item_weight weights=page.infobox_item_weights %}
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    {% if page.infobox_item_nonmedication %}
+    {% else %}
+    {% if page.infobox_med_route or page.infobox_med_autoinjector %}
+    {% else %}
+    <tr class="infobox-header">
+        <td colspan="2">{% if page.infobox_vial_type %}{{ page.infobox_vial_type }}{% else %}Vial{% endif %}</td> 
+    </tr>
+    <tr class="infobox-row">
+        <td class="infobox-row-title" style="min-width:40%;">{% if page.infobox_vial_type %}{{ page.infobox_vial_type }}{% else %}Vial{% endif %} Size</td>
+        <td>{{ page.infobox_vial_size }}ml</td>
+    </tr>
+    <tr class="infobox-row">
+        <td class="infobox-row-title" style="min-width:40%;">{% if page.infobox_vial_type %}{{ page.infobox_vial_type }}{% else %}Vial{% endif %} Contents</td>
+        <td>
+            {% include git-wiki/components/infobox/section_med_contents.html is_micro=page.infobox_vial_contents_micro contents=page.infobox_vial_contents %}
+        </td>
+    </tr>
+    {% if page.infobox_vial_contents and page.infobox_vial_size %}
+    <tr class="infobox-row">
+        <td class="infobox-row-title" style="min-width:40%;">{% if page.infobox_vial_type %}{{ page.infobox_vial_type }}{% else %}Vial{% endif %} Concentration</td>
+        <td>
+            {% include git-wiki/components/infobox/section_med_concentration.html is_micro=page.infobox_vial_contents_micro contents=page.infobox_vial_contents container_size=page.infobox_vial_size %}
+        </td>
+    </tr>
+    {% endif %}
+    {% endif %}
+    <tr class="infobox-header">
+        <td colspan="2">Medication</td>
+    </tr>
+    <tr class="infobox-row">
+        <td class="infobox-row-title" style="min-width:40%;">Route(s) of administration</td>
+        <td>
+            {% include git-wiki/components/infobox/section_med_route.html is_autoinjector=page.infobox_med_autoinjector route=page.infobox_med_route has_iv=page.infobox_med_iv has_im=page.infobox_med_im %}
+        </td>
+    </tr>
+    {% if page.infobox_med_dose %}
+    <tr class="infobox-row">
+        <td class="infobox-row-title" style="min-width:40%;">
+            {% unless page.infobox_med_route %}
+            Dose Range
+            {% else %}
+            Recommended Dose
+            {% endunless %} {% if page.infobox_med_dose_multi %}<span style="font-size:11px;vertical-align:text-top;"><br>(Use case dependant)</span>{% endif %}
+        </td> 
+        <td style="text-wrap:balance;">{{ page.infobox_med_dose }}{% if page.infobox_med_dose_checknote %}<span style="font-size:11px;vertical-align:text-top;"> (See <a href="#dosing">Dosing</a>)</span>{% endif %}</td>
+    </tr>
+    {% endif %}
+    <tr class="infobox-header">
+        <td colspan="2">Medication Effects</td>
+    </tr>
+    <tr>
+        <td colspan="2" style="padding:0;">
+            <table class="infobox-inline-table">
+                <tr class="infobox-row">
+                    <td class="infobox-row-title-itable-f" style="min-width:40%;">
+                        Onset {% if page.infobox_med_iv and page.infobox_med_im and page.infobox_med_iv_onset and page.infobox_med_im_onset %}<span style="font-size:11px;vertical-align:text-top;">(IV/IM)</span>{% endif %}
+                    </td>
+                    <td class="infobox-row-itable-f">
+                        {% if page.infobox_med_route %}
+                        {{ page.infobox_med_onset }}
+                        {% else %}
+                        {% if page.infobox_med_iv and page.infobox_med_im and page.infobox_med_iv_onset and page.infobox_med_im_onset %}
+                            {{ page.infobox_med_iv_onset }} | {{ page.infobox_med_im_onset }}
+                        {% else %}
+                            {{ page.infobox_med_iv_onset }}{{ page.infobox_med_im_onset }}
+                        {% endif %}
+                        {% endif %}
+                    </td>
+                </tr>
+                <tr class="infobox-row">
+                    <td class="infobox-row-title-itable" style="min-width:40%;">
+                        Peak {% if page.infobox_med_iv and page.infobox_med_im and page.infobox_med_iv_peak and page.infobox_med_im_peak %}<span style="font-size:11px;vertical-align:text-top;">(IV/IM)</span>{% endif %}
+                    </td>
+                    <td class="infobox-row-itable">
+                        {% if page.infobox_med_route %}
+                        {{ page.infobox_med_peak }}
+                        {% else %}
+                        {% if page.infobox_med_iv and page.infobox_med_im and page.infobox_med_iv_peak and page.infobox_med_im_peak %}
+                            {{ page.infobox_med_iv_peak }} | {{ page.infobox_med_im_peak }}
+                        {% else %}
+                            {{ page.infobox_med_iv_peak }}{{ page.infobox_med_im_peak }}
+                        {% endif %}
+                        {% endif %}
+                    </td>
+                </tr>
+                <tr class="infobox-row">
+                    <td class="infobox-row-title-itable" style="min-width:40%;">
+                        Duration {% if page.infobox_med_iv and page.infobox_med_im and page.infobox_med_iv_duration and page.infobox_med_im_duration %}<span style="font-size:11px;vertical-align:text-top;">(IV/IM)</span>{% endif %}
+                    </td>
+                    <td class="infobox-row-itable">
+                        {% if page.infobox_med_route %}
+                        {{ page.infobox_med_duration }}
+                        {% else %}
+                        {% if page.infobox_med_iv and page.infobox_med_im and page.infobox_med_iv_duration and page.infobox_med_im_duration %}
+                            {{ page.infobox_med_iv_duration }} | {{ page.infobox_med_im_duration }}
+                        {% else %}
+                            {{ page.infobox_med_iv_duration }}{{ page.infobox_med_im_duration }}
+                        {% endif %}
+                        {% endif %}
+                    </td>
+                </tr>
+                <tr class="infobox-row">
+                    <td class="infobox-row-title-itable" style="min-width:40%;">
+                        <abbr title="Heart Rate">HR</abbr> | <abbr title="Blood Pressure">BP</abbr> | <abbr title="Respiration Rate">RR</abbr>
+                    </td>
+                    <td class="infobox-row-itable" style="font-size:18px;">
+                        {% if page.infobox_med_effect_hr %}
+                        {% if page.infobox_med_effect_hr_route %}<span style="font-size:12px;vertical-align:middle;">({{ page.infobox_med_effect_hr_route }})</span>{% endif %}
+                        <span style="letter-spacing:-1px;">{% include git-wiki/components/infobox/section_effect_strength.html strength=page.infobox_med_effect_hr %}</span>
+                        {% else %}
+                        <span style="font-size:12px;vertical-align:middle;">N/A</span>
+                        {% endif %} |
+                        {% if page.infobox_med_effect_bp %}
+                        {% if page.infobox_med_effect_bp_route %}<span style="font-size:12px;vertical-align:middle;">({{ page.infobox_med_effect_bp_route }})</span>{% endif %}
+                        <span style="letter-spacing:-1px;">{% include git-wiki/components/infobox/section_effect_strength.html strength=page.infobox_med_effect_bp %}</span>
+                        {% else %}
+                        <span style="font-size:12px;vertical-align:middle;">N/A</span>
+                        {% endif %} |
+                        {% if page.infobox_med_effect_rr %}
+                        {% if page.infobox_med_effect_rr_route %}<span style="font-size:12px;vertical-align:middle;">({{ page.infobox_med_effect_rr_route }})</span>{% endif %}
+                        <span style="letter-spacing:-1px;">{% include git-wiki/components/infobox/section_effect_strength.html strength=page.infobox_med_effect_rr %}</span> 
+                        {% else %}
+                        <span style="font-size:12px;vertical-align:middle;">N/A</span>
+                        {% endif %}
+                    </td>
+                </tr>
+                <tr class="infobox-row">
+                    <td class="infobox-row-title-itable" style="min-width:40%;">Pain Relief</td>
+                    <td class="infobox-row-itable">
+                        {% if page.infobox_med_pain %}
+                            {{ page.infobox_med_pain }}
+                        {% else %}
+                            None
+                        {% endif %}
+                    </td>
+                </tr>
+                <tr class="infobox-row">
+                    <td class="infobox-row-title-itable" style="min-width:40%;">Nausea</td>
+                    <td class="infobox-row-itable">
+                        {% if page.infobox_med_nausea %}
+                            {{ page.infobox_med_nausea }}
+                        {% else %}
+                            None
+                        {% endif %}
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    {% endif %}
+    <tr class="infobox-header">
+        <td colspan="2">Technical</td>
+    </tr>
+    <tr>
+        <td colspan="2" style="padding:0;">
+            <table class="infobox-inline-table">
+                <tr class="infobox-row">
+                    {% if page.infobox_item_classnames %}
+                    <td class="infobox-row-title-itable-f">Classnames</td>
+                    <td class="infobox-row-itable-f">
+                        {% for classname in page.infobox_item_classnames %}
+                       <code>{{ classname }}</code><br>
+                        {% endfor %}
+                    </td>
+                    {% else %}
+                    <td class="infobox-row-title-itable-f">Classname</td>
+                    <td class="infobox-row-itable-f">{% if page.infobox_item_classname %}<code>{{ page.infobox_item_classname }}</code>{% else %}N/A{% endif %}</td>
+                    {% endif %}
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
