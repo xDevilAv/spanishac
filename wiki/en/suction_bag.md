@@ -13,14 +13,14 @@ page_category:
 - airway_suction
 - airway_management
 
-export_use: "Clearing airway obstructions"
+export_use: "Eliminación de obstrucciones de la vía aérea"
 
 infobox_image: "/wiki/image/suctionbag.png"
 
 infobox_use_category: "airway"
 infobox_use_selection: "head"
 
-infobox_item_type: "Airway Suction Device"
+infobox_item_type: "Dispositivo de aspiración de vía aérea"
 
 infobox_item_nonmedication: true
 
