@@ -1,6 +1,6 @@
 ---
 title: NCD Kit
-title_long: Needle-Chest-Decompression Kit
+title_long: Kit de Descompresión Torácica con Aguja
 permalink: /en/NCD_Kit
 redirect_from:
 - /en/Needle-Chest-Decompression Kit
@@ -13,15 +13,15 @@ page_category:
 - breathing
 - chest_injury_management
 
-export_use: "Treating tension pneumothorax"
-export_condition: "Must have wounds that may cause a chest injury"
+export_use: "Tratamiento del neumotórax a tensión"
+export_condition: "Debe haber heridas que puedan causar una lesión torácica"
 
 infobox_image: "/wiki/image/kit_ncd.png"
 
 infobox_use_category: "airway"
 infobox_use_selection: "torso"
 
-infobox_item_type: "Chest Injury Treatment Kit"
+infobox_item_type: "Kit de tratamiento de lesiones torácicas"
 
 infobox_item_nonmedication: true
 
