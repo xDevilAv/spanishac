@@ -8,15 +8,15 @@ page_category:
 - medication
 - liquid_medication
 
-export_use: "Managing nausea and vomiting caused by medications"
-export_doserange: "4mg, up to 8mg"
+export_use: "Control de náuseas y vómitos causados por medicamentos"
+export_doserange: "4mg, hasta 8mg"
 
 infobox_image: "/wiki/image/vial_ondansetron.png"
 
 infobox_use_category: "medication"
 infobox_use_selection: "body"
 
-infobox_item_type: "Antiemetic Medication"
+infobox_item_type: "Medicamento antiemético"
 infobox_item_weight: "0.01kg | 0.02lb"
 
 infobox_item_classname: "ACM_Vial_Ondansetron"
@@ -38,47 +38,47 @@ infobox_med_im_duration: "~15m"
 
 infobox_med_effect_hr: -1
 
-infobox_med_nausea: "DOSE-BASED"
+infobox_med_nausea: "DEPENDIENTE DE LA DOSIS"
 ---
 
 {% include git-wiki/components/infobox/item_infobox.html %}
 
-Ondansetron is a medication used to manage nausea and vomiting caused by other medications.
+**Ondansetron** es un medicamento utilizado para controlar las náuseas y vómitos causados por otros medicamentos.
 
-# Function
-Ondansetron is used to manage nausea caused by other medications and lower chances of vomiting.
+# Función
+Ondansetron se utiliza para controlar las náuseas causadas por otros medicamentos y reducir las probabilidades de vómito.
 
-Ondansetron can cause bradycardia and at higher doses may not improve nausea.
+Ondansetron puede causar bradicardia y, en dosis más altas, puede no mejorar las náuseas.
 
-Ondansetron is administered intravenously or intramuscularly with a rapid to quick onset, moderate peak and duration.
+Ondansetron se administra por vía intravenosa o intramuscular con un inicio rápido, un pico moderado y una duración moderada.
 
-# Usage
+# Uso
 {% include git-wiki/components/template/action_note.html name="Use Syringe" bodypart="Torso and Limbs" category="medication" %}
 {% include git-wiki/components/template/action_note.html name="Push Ondansetron" bodypart="Torso and Limbs" category="medication" %}
 {% include git-wiki/components/template/action_note.html name="Inject Ondansetron" bodypart="Torso and Limbs" category="medication" %}
 
-Medications require a {% include hl.html t="Syringe" i="/wiki/image/syringe_5.png" %} to be able to be drawn and administered.
+Los medicamentos requieren una {% include hl.html t="Syringe" i="/wiki/image/syringe_5.png" %} para poder extraerse y administrarse.
 
-IV access is achieved with IV Catheters or IO devices.
+El acceso IV se consigue mediante catéteres IV o dispositivos IO.
 
-Medications can be administered intramuscularly with just a syringe.
+Los medicamentos también pueden administrarse por vía intramuscular usando únicamente una jeringa.
 
-## Dosing
-Push or inject 4mg, up to 8mg
+## Dosificación
+Administrar o inyectar **4mg**, hasta un máximo de **8mg**
 
-## Effects
+## Efectos
 {% include git-wiki/components/template/section_med_effects.html %}
 
-#### Potential Complications
-- Bradycardia
-- Cardiac Arrest
+#### Posibles complicaciones
+- Bradicardia
+- Paro cardíaco
 
-## Indications
-- Nausea
+## Indicaciones
+- Náuseas
 
-## Contraindications
-- Bradycardia
+## Contraindicaciones
+- Bradicardia
 
-# External Links
+# Enlaces externos
 - [Ondansetron (Wikipedia)](https://en.wikipedia.org/wiki/Ondansetron)
 - [Pain Medication (Analgesia) - Ondansetron Administration (TCCC.org.ua)](https://tccc.org.ua/en/guide/module-15-pain-medication-analgesia-cmc#n10)
