@@ -1,22 +1,18 @@
 ---
 title: Main Page
 permalink: /en/Main_Page
-redirect_from:
-    - "/"
-    - "/en"
-published: true
 layout: default
 ---
 
 <div id="intro-screen">
-  <div class="intro-content">
+<div class="intro-content">
 
-    <img src="{{ '/wiki/image/logo.png' | relative_url }}" class="intro-logo">
+<img src="{{ '/wiki/image/logo.png' | relative_url }}" class="intro-logo">
 
-    <h1 class="intro-title">ACM Devil Medical</h1>
-    <p class="intro-text">Bienvenido al manual médico</p>
+<h1 class="intro-title">ACM Devil Medical</h1>
+<p class="intro-text">Bienvenido al manual médico</p>
 
-    <button id="enter-button">ENTER MANUAL</button>
+<button id="enter-button">ENTER MANUAL</button>
 
-  </div>
+</div>
 </div>
