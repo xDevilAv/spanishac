@@ -11,19 +11,19 @@ page_category:
 - packaged_medication
 - autoinjector
 
-export_use: "Managing seizure activity caused by nerve agent exposure"
+export_use: "Control de convulsiones causadas por exposición a agentes nerviosos"
 
 infobox_image: "/wiki/image/autoinjector_midazolam.png"
 
 infobox_use_category: "medication"
 infobox_use_selection: "body"
 
-infobox_item_type: "Autoinjector"
+infobox_item_type: "Autoinyector"
 infobox_item_weight: "0.05kg | 0.10lb"
 
 infobox_item_classname: "ACM_Autoinjector_Midazolam"
 
-infobox_med_dose: "1 injection"
+infobox_med_dose: "1 inyección"
 infobox_med_autoinjector: true
 
 infobox_med_im: true
@@ -37,32 +37,32 @@ infobox_med_effect_bp: -1
 
 {% include git-wiki/components/infobox/item_infobox.html %}
 
-The Midazolam Autoinjector is a device used to easily self administer midazolam to manage seizure activity.
+El **autoinyector de midazolam** es un dispositivo utilizado para autoadministrar midazolam fácilmente y controlar la actividad convulsiva.
 
-# Function
-The midazolam autoinjector is used to quickly combat seizure activity caused by nerve agent exposure, without requiring dosing of liquid medication.
+# Función
+El autoinyector de midazolam se utiliza para combatir rápidamente las convulsiones causadas por la exposición a agentes nerviosos, sin necesidad de dosificar medicación líquida.
 
-Midazolam is administered intramuscularly with a quick onset, moderate peak and long duration.
+El midazolam se administra por vía intramuscular con un inicio rápido, un pico moderado y una duración prolongada.
 
-# Usage
+# Uso
 {% include git-wiki/components/template/action_note.html name="Use Midazolam Autoinjector" bodypart="Limbs" category="medication" %}
 
-## Recommended Dose
-Single injection
+## Dosis recomendada
+Una sola inyección
 
-## Effects
+## Efectos
 {% include git-wiki/components/template/section_med_effects.html %}
 
-#### Potential Complications
-- Bradycardia
-- Hypotension
-- Cardiac Arrest
+#### Posibles complicaciones
+- Bradicardia
+- Hipotensión
+- Paro cardíaco
 
-## Indications
-- Nerve Agent Exposure
+## Indicaciones
+- Exposición a agentes nerviosos
 
-## Contraindications
+## Contraindicaciones
 - N/A
 
-# External Links
+# Enlaces externos
 - [Midazolam (Wikipedia)](https://en.wikipedia.org/wiki/Midazolam)
