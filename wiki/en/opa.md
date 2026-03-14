@@ -28,7 +28,7 @@ infobox_item_classname: "ACM_OPA"
 
 {% include git-wiki/components/infobox/item_infobox.html %}
 
-La **cánula orofaríngea (OPA)** es un {% include hl.html t="Airway Adjunct" %} utilizado para mantener abierta la vía aérea superior en pacientes inconscientes.
+La **cánula orofaríngea (OPA)** es un dispositivo par las vías respiratorias utilizado para mantener abierta la vía aérea superior en pacientes inconscientes.
 
 # Función
 El OPA se utiliza para manejar la pérdida de reflejos protectores de la vía aérea y el {% include hl.html t="Airway Collapse" %} abriendo físicamente la vía aérea y permitiendo que el aire pase a través del tubo hacia la vía respiratoria.
