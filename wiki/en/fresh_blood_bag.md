@@ -11,8 +11,8 @@ page_category:
 - circulation
 - fluid_transfusion
 
-export_use: "Transfusing fresh blood to patient"
-export_condition: "Must have IV/IO access"
+export_use: "Transfusión de sangre fresca al paciente"
+export_condition: "Debe existir acceso IV/IO"
 
 infobox_image: "/wiki/image/fbtk_full.png"
 infobox_use_category: "transfusion"
@@ -23,7 +23,7 @@ infobox_item_multiitem_variants:
 - "250ml"
 - "500ml"
 
-infobox_item_type: "Fluid Bag"
+infobox_item_type: "Bolsa de fluidos"
 
 infobox_item_nonmedication: true
 
