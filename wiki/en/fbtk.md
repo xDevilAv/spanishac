@@ -12,8 +12,8 @@ page_category:
 - circulation
 - fluid_transfusion
 
-export_use: "Transfusing fresh blood from donor into fluid bag"
-export_condition: "Must have IV access"
+export_use: "Transfundir sangre fresca de un donante a una bolsa de fluidos"
+export_condition: "Debe existir acceso IV"
 
 infobox_image: "/wiki/image/fbtk.png"
 infobox_use_category: "transfusion"
@@ -24,7 +24,7 @@ infobox_item_multiitem_variants:
 - "250ml"
 - "500ml"
 
-infobox_item_type: "Blood Transfusion Kit"
+infobox_item_type: "Kit de transfusión de sangre"
 
 infobox_item_nonmedication: true
 
