@@ -9,7 +9,7 @@ layout: default
 
 <img src="{{ '/wiki/image/logo.png' | relative_url }}" class="intro-logo">
 
-<h1 class="intro-title">ACM Devil Medical</h1>
+<h1 class="intro-title">ACM Sistema Médico Prometeo</h1>
 <p class="intro-text">Bienvenido al manual médico</p>
 
 <button id="enter-button">ENTER MANUAL</button>
