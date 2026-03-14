@@ -1,5 +1,5 @@
 ---
-title: Atropine
+title: Atropina
 permalink: /en/Atropine
 published: true
 
