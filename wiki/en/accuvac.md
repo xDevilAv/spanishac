@@ -10,14 +10,14 @@ page_category:
 - airway_management
 - multi_use_item
 
-export_use: "Clearing airway obstructions"
+export_use: "Despejar obstrucciones de la vía aérea"
 
 infobox_image: "/wiki/image/accuvac.png"
 
 infobox_use_category: "airway"
 infobox_use_selection: "head"
 
-infobox_item_type: "Airway Suction Device"
+infobox_item_type: "Dispositivo de aspiración de vía aérea"
 infobox_item_usecount: 0
 
 infobox_item_nonmedication: true
