@@ -12,14 +12,14 @@ page_category:
 - circulation
 - io_access
 
-export_use: "Establishing intraosseous access route"
+export_use: "Establecer una vía de acceso intraósea"
 
 infobox_image: "/wiki/image/io_fast1.png"
 
 infobox_use_category: "advanced"
 infobox_use_selection: "torso"
 
-infobox_item_type: "IO Access Needle"
+infobox_item_type: "Aguja de acceso IO"
 
 infobox_item_nonmedication: true
 
