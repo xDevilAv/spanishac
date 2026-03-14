@@ -1,5 +1,5 @@
 ---
-title: Tubo torácico
+title: Chest Tube Kit
 permalink: /en/Chest_Tube_Kit
 redirect_from:
 - /en/Chest Tube Kit
