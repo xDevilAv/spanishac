@@ -10,8 +10,8 @@ page_category:
 - bandage
 - external_bleeding_management
 
-export_use: "Wrapping clotted, bandaged and bruised injuries"
-export_condition: "Body part must have un-wrapped clots, bandages or bruises<br>Body part must not be bleeding"
+export_use: "Envolver lesiones con coágulos, vendadas o contusiones"
+export_condition: "La parte del cuerpo debe tener coágulos, vendajes o contusiones sin envolver<br>La parte del cuerpo no debe estar sangrando"
 
 infobox_image: "/wiki/image/elasticwrap.png"
 
@@ -20,7 +20,7 @@ infobox_use_selection: "all"
 
 infobox_item_nonmedication: true
 
-infobox_item_type: "Bandage"
+infobox_item_type: "Vendaje"
 infobox_item_weight: "0.01kg | 0.03lb"
 
 infobox_item_classname: "ACM_ElasticWrap"
