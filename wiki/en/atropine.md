@@ -8,15 +8,15 @@ page_category:
 - medication
 - liquid_medication
 
-export_use: "Treating nerve agent exposure, increasing heart rate"
-export_doserange: "(Nerve Agent Exposure) 2-4mg initial, more if required<br>(Bradycardia) >1mg"
+export_use: "Tratamiento de exposición a agentes nerviosos, aumento de la frecuencia cardíaca"
+export_doserange: "(Exposición a agentes nerviosos) 2-4mg inicial, más si es necesario<br>(Bradicardia) >1mg"
 
 infobox_image: "/wiki/image/vial_atropine.png"
 
 infobox_use_category: "medication"
 infobox_use_selection: "body"
 
-infobox_item_type: "Anticholinergic Medication"
+infobox_item_type: "Medicamento anticolinérgico"
 infobox_item_weight: "0.01kg | 0.02lb"
 
 infobox_item_classname: "ACM_Vial_Atropine"
@@ -41,46 +41,46 @@ infobox_med_effect_rr: 1
 
 {% include git-wiki/components/infobox/item_infobox.html %}
 
-Atropine is a medication used to treat Nerve Agent Exposure and manage Bradycardia.
+La atropina es un medicamento utilizado para tratar la exposición a agentes nerviosos y para manejar la bradicardia.
 
-# Function
-Atropine is used in the case of nerve agent exposure, atropine will block the muscarinic effects of nerve agents and prevent complete respiratory failure.
+# Función
+La atropina se utiliza en casos de exposición a agentes nerviosos. La atropina bloquea los efectos muscarínicos de los agentes nerviosos y ayuda a prevenir el fallo respiratorio completo.
 
-Depending on severity higher doses of atropine may be required to fully manage and treat nerve agent exposure.
+Dependiendo de la gravedad, pueden ser necesarias dosis más altas de atropina para tratar completamente la exposición a agentes nerviosos.
 
-Atropine may also be used to manage bradycardia caused by other medications.
+La atropina también puede utilizarse para tratar la bradicardia causada por otros medicamentos.
 
-Atropine is administered intravenously or intramuscularly with a rapid to quick onset, moderate peak and duration.
+La atropina se administra por vía intravenosa o intramuscular con un inicio rápido, un pico moderado y una duración moderada.
 
-# Usage
+# Uso
 {% include git-wiki/components/template/action_note.html name="Use Syringe" bodypart="Torso and Limbs" category="medication" %}
 {% include git-wiki/components/template/action_note.html name="Push Atropine" bodypart="Torso and Limbs" category="medication" %}
 {% include git-wiki/components/template/action_note.html name="Inject Atropine" bodypart="Torso and Limbs" category="medication" %}
 
-Medications require a {% include hl.html t="Syringe" i="/wiki/image/syringe_5.png" %} to be able to be drawn and administered.
+Los medicamentos requieren una {% include hl.html t="Syringe" i="/wiki/image/syringe_5.png" %} para poder extraerse y administrarse.
 
-IV access is achieved with IV Catheters or IO devices.
+El acceso IV se logra mediante catéteres IV o dispositivos IO.
 
-Medications can be administered intramuscularly with just a syringe.
+Los medicamentos también pueden administrarse por vía intramuscular utilizando únicamente una jeringa.
 
-## Dosing
-**Nerve Agent Exposure:** Push 2-4mg initially, more as required<br>
-**Bradycardia:** Push >1mg IV, as required
+## Dosificación
+**Exposición a agentes nerviosos:** Administrar inicialmente 2-4mg, más según sea necesario<br>
+**Bradicardia:** Administrar >1mg IV según sea necesario
 
-## Effects
+## Efectos
 {% include git-wiki/components/template/section_med_effects.html %}
 
-#### Potential Complications
-- Tachycardia
-- Cardiac Arrest
+#### Posibles complicaciones
+- Taquicardia
+- Paro cardíaco
 
-## Indications
-- Nerve Agent Exposure
-- Bradycardia
+## Indicaciones
+- Exposición a agentes nerviosos
+- Bradicardia
 
-## Contraindications
-- Tachycardia (NOT from nerve agent exposure)
+## Contraindicaciones
+- Taquicardia (NO causada por exposición a agentes nerviosos)
 
-# External Links
+# Enlaces externos
 - [Atropine (Wikipedia)](https://en.wikipedia.org/wiki/Atropine)
 - [CBRN Injury Response (Part 2) - Atropine (TCCC.org.ua)](https://tccc.org.ua/en/guide/cbrn-injury-part-2-cpg#n19)
