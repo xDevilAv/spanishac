@@ -8,14 +8,14 @@ page_category:
 - medication
 - liquid_medication
 
-export_use: "Managing wound infection, requirement for Evacuation"
+export_use: "Tratamiento de infecciones en heridas, requisito para evacuación"
 
 infobox_image: "/wiki/image/vial_ertapenem.png"
 
 infobox_use_category: "medication"
 infobox_use_selection: "body"
 
-infobox_item_type: "Antibiotic Medication"
+infobox_item_type: "Antibiótico"
 infobox_item_weight: "0.01kg | 0.02lb"
 
 infobox_item_classname: "ACM_Vial_Ertapenem"
@@ -38,35 +38,35 @@ infobox_med_im_duration: "~20m"
 
 {% include git-wiki/components/infobox/item_infobox.html %}
 
-Ertapenem is an antibiotic used to treat bacterial infection.
+Ertapenem es un antibiótico utilizado para tratar infecciones bacterianas.
 
-# Function
-Ertapenem is a requirement for casualty conversion and Evacuation, and has no other effects.
+# Función
+Ertapenem es un requisito para la conversión de bajas y la evacuación, y no tiene otros efectos.
 
-Ertapenem can be administered intravenously or intramuscularly with a rapid onset, moderate peak and long duration, depending on route.
+Ertapenem puede administrarse por vía intravenosa o intramuscular con un inicio rápido, pico moderado y duración prolongada, dependiendo de la vía de administración.
 
-The casualty conversion must be done while under the effects of the medication.
+La conversión de la baja debe realizarse mientras el medicamento esté activo.
 
-# Usage
+# Uso
 {% include git-wiki/components/template/action_note.html name="Use Syringe" bodypart="Torso and Limbs" category="medication" %}
 {% include git-wiki/components/template/action_note.html name="Push Ertapenem" bodypart="Torso and Limbs" category="medication" %}
 {% include git-wiki/components/template/action_note.html name="Inject Ertapenem" bodypart="Torso and Limbs" category="medication" %}
 
-Medications require a {% include hl.html t="Syringe" i="/wiki/image/syringe_5.png" %} to be able to be drawn and administered.
+Los medicamentos requieren una {% include hl.html t="Syringe" i="/wiki/image/syringe_5.png" %} para poder extraerse y administrarse.
 
-IV access is achieved with IV Catheters or IO devices.
+El acceso IV se consigue mediante catéteres IV o dispositivos IO.
 
-Medications can be administered intramuscularly with just a syringe.
+Los medicamentos pueden administrarse por vía intramuscular usando únicamente una jeringa.
 
-## Dosing
+## Dosificación
 1g
 
-## Indications
-- Patient planned for evacuation
+## Indicaciones
+- Paciente planificado para evacuación
 
-## Contraindications
+## Contraindicaciones
 - N/A
 
-# External Links
+# Enlaces externos
 - [Ertapenem (Wikipedia)](https://en.wikipedia.org/wiki/Ertapenem)
 - [Antibiotics Administration (TCCC.org.ua)](https://tccc.org.ua/en/guide/module-16-antibiotics-administration-cmc)
