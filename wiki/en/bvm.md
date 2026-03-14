@@ -12,15 +12,15 @@ page_category:
 - breathing
 - multi_use_item
 
-export_use: "Providing manual oxygenation"
-export_condition: "Must not be blocked by CPR or another BVM"
+export_use: "Proporcionar ventilación manual con oxígeno"
+export_condition: "No debe estar bloqueado por RCP ni por otro BVM"
 
 infobox_image: "/wiki/image/bvm.png"
 
 infobox_use_category: "airway"
 infobox_use_selection: "head"
 
-infobox_item_type: "Manual Ventilation Device"
+infobox_item_type: "Dispositivo de ventilación manual"
 infobox_item_usecount: 0
 
 infobox_item_nonmedication: true
