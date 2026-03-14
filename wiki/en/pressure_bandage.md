@@ -10,8 +10,8 @@ page_category:
 - bandage
 - external_bleeding_management
 
-export_use: "Bandaging bleeding wounds"
-export_condition: "Body part must have bleeding wounds"
+export_use: "Vendaje de heridas con sangrado"
+export_condition: "La parte del cuerpo debe tener heridas sangrantes"
 
 infobox_image: "/wiki/image/pressurebandage.png"
 
