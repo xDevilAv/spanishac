@@ -9,7 +9,7 @@ page_category:
 - airway_adjunct
 - airway_management
 
-export_use: "Establishing surgical airway"
+export_use: "Establecer una vía aérea quirúrgica"
 export_condition: ""
 
 infobox_image: "/wiki/image/kit_cric.png"
@@ -17,7 +17,7 @@ infobox_image: "/wiki/image/kit_cric.png"
 infobox_use_category: "airway"
 infobox_use_selection: "head"
 
-infobox_item_type: "Surgical Airway Kit"
+infobox_item_type: "Kit de vía aérea quirúrgica"
 
 infobox_item_nonmedication: true
 
@@ -28,29 +28,30 @@ infobox_item_classname: "ACM_CricKit"
 
 {% include git-wiki/components/infobox/item_infobox.html %}
 
-The CricKit is a single use kit used to establish a {% include hl.html t="Surgical Airway" %} when all other airway management options fail. 
+El CricKit es un kit de un solo uso utilizado para establecer una {% include hl.html t="Vía aérea quirúrgica" %} cuando todas las demás opciones de manejo de la vía aérea han fallado.
 
-# Function
-{% include git-wiki/components/template/link_note.html text="See:" link="/en/Surgical_Airway" linktext = "Surgical Airway"%}
+# Función
+{% include git-wiki/components/template/link_note.html text="Ver:" link="/en/Surgical_Airway" linktext = "Vía aérea quirúrgica"%}
 
-# Usage
+# Uso
 {% include git-wiki/components/template/action_note.html name="Establish Surgical Airway" bodypart="Head" category="airway" %}
 
-The kit is consumed upon completing, cancelling or failing to establish a surgical airway.
-- If a surgical airway is cancelled before an incision is made then the crickit is returned instead
+El kit se consume al completar, cancelar o fallar el intento de establecer una vía aérea quirúrgica.
+
+- Si la vía aérea quirúrgica se cancela antes de realizar la incisión, el CricKit se devuelve.
 <br>
-- **{% include hl.html t="Head Tilt-Chin Lift" %} -** If a head tilt-chin lift is performed it will be cancelled upon starting to establish a surgical airway.
-- **Recovery Position -** If the patient is placed into the recovery position establishing a surgical airway will cancel the recovery position.
-- **{% include hl.html t="CPR" %} and {% include hl.html t="BVM" i="/wiki/image/bvm.png" %} -** A surgical airway allows performing simultaneous CPR and BVM rescue breaths
+- **{% include hl.html t="Head Tilt-Chin Lift" %} -** Si se realiza una maniobra de inclinación de cabeza y elevación del mentón, esta se cancelará al comenzar a establecer una vía aérea quirúrgica.
+- **Recovery Position -** Si el paciente es colocado en posición de recuperación, iniciar una vía aérea quirúrgica cancelará dicha posición.
+- **{% include hl.html t="CPR" %} y {% include hl.html t="BVM" i="/wiki/image/bvm.png" %} -** Una vía aérea quirúrgica permite realizar RCP y ventilaciones de rescate con BVM simultáneamente.
 
-## Indications
-- Severe airway inflammation
-- Unmanaged airway spasm
+## Indicaciones
+- Inflamación grave de la vía aérea
+- Espasmo de la vía aérea no controlado
 
-## Contraindications
+## Contraindicaciones
 - N/A
 
-# External Links
+# Enlaces externos
 - [Cricothyrotomy (Wikipedia)](https://en.wikipedia.org/wiki/Cricothyrotomy)
 - [Standard Open Cricothyroidotomy (TCCC.org.ua)](https://tccc.org.ua/en/guide/standard-open-cricothyroidotomy)
 - [Emergency Cricothyroidotomy: Cric-Key (TCCC.org.ua)](https://tccc.org.ua/en/guide/emergency-cricothyroidotomy-cric-key)
