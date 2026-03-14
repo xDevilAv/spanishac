@@ -1,5 +1,5 @@
 ---
-title: Sello Torácico
+title: Chest Seal
 permalink: /en/Chest_Seal
 redirect_from:
 - /en/Chest_Seal
