@@ -28,4 +28,25 @@ body::after {
     right: 0;
 }
 
+/* ===== TÍTULOS ===== */
 
+/* título principal */
+h1 {
+    color: #b00020;
+    border-bottom: 2px solid #7a0000;
+    padding-bottom: 4px;
+}
+
+/* subtítulos */
+h2 {
+    color: #dddddd;
+}
+
+h3 {
+    color: #bbbbbb;
+}
+
+/* enlaces */
+a {
+    color: #4db8ff;
+}
