@@ -11,15 +11,15 @@ page_category:
 - circulation
 - multi_use_item
 
-export_use: "Measuring blood pressure"
-export_condition: "Arm must not already have applied pressure cuff<br>Pressure cuff placement must not conflict with inserted IV"
+export_use: "Medición de la presión arterial"
+export_condition: "El brazo no debe tener ya un manguito de presión aplicado<br>La colocación del manguito no debe entrar en conflicto con un IV insertado"
 
 infobox_image: "/wiki/image/pressurecuff.png"
 
 infobox_use_category: "examine"
 infobox_use_selection: "arms"
 
-infobox_item_type: "Blood Pressure Measuring Device"
+infobox_item_type: "Dispositivo de medición de presión arterial"
 infobox_item_usecount: 0
 
 infobox_item_nonmedication: true
