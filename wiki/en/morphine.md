@@ -8,15 +8,15 @@ page_category:
 - medication
 - liquid_medication
 
-export_use: "Managing severe pain"
-export_doserange: "(IV) 0.05-0.1mg/kg or 3.75-10mg<br>(IM) 0.07-0.1mg/kg or 4.25-10mg"
+export_use: "Control del dolor intenso"
+export_doserange: "(IV) 0.05-0.1mg/kg o 3.75-10mg<br>(IM) 0.07-0.1mg/kg o 4.25-10mg"
 
 infobox_image: "/wiki/image/vial_morphine.png"
 
 infobox_use_category: "medication"
 infobox_use_selection: "body"
 
-infobox_item_type: "Analgesic Opioid Medication"
+infobox_item_type: "Medicamento opioide analgésico"
 infobox_item_weight: "0.01kg | 0.02lb"
 
 infobox_item_classname: "ACM_Vial_Morphine"
@@ -40,52 +40,52 @@ infobox_med_effect_hr: -2
 infobox_med_effect_bp: -2
 infobox_med_effect_rr: -2
 
-infobox_med_pain: "STRONG"
+infobox_med_pain: "FUERTE"
 ---
 
 {% include git-wiki/components/infobox/item_infobox.html %}
 
-Morphine is an opioid medication used to manage severe pain.
+La **morfina** es un medicamento opioide utilizado para controlar el dolor intenso.
 
-# Function
-Morphine is used to combat severe pain caused by injuries or other medical procedures.
+# Función
+La morfina se utiliza para combatir el dolor intenso causado por lesiones u otros procedimientos médicos.
 
-Morphine is very effective at managing severe pain for a longer period of time, it requires careful dosing due to its effects on the heart rate and respiratory rate.
+La morfina es muy eficaz para controlar el dolor intenso durante un periodo más prolongado, pero requiere una dosificación cuidadosa debido a sus efectos sobre la frecuencia cardíaca y la frecuencia respiratoria.
 
-Morphine is administered intravenously or intramuscularly with a quick to delayed onset, moderate peak and long duration.
+La morfina se administra por vía intravenosa o intramuscular con un inicio de acción rápido a moderado, un pico moderado y una duración prolongada.
 
-# Usage
+# Uso
 {% include git-wiki/components/template/action_note.html name="Use Syringe" bodypart="Torso and Limbs" category="medication" %}
 {% include git-wiki/components/template/action_note.html name="Push Morphine" bodypart="Torso and Limbs" category="medication" %}
 {% include git-wiki/components/template/action_note.html name="Inject Morphine" bodypart="Torso and Limbs" category="medication" %}
 
-Medications require a {% include hl.html t="Syringe" i="/wiki/image/syringe_5.png" %} to be able to be drawn and administered.
+Los medicamentos requieren una {% include hl.html t="Syringe" i="/wiki/image/syringe_5.png" %} para poder extraerse y administrarse.
 
-IV access is achieved with IV Catheters or IO devices.
+El acceso IV se consigue mediante catéteres IV o dispositivos IO.
 
-Medications can be administered intramuscularly with just a syringe.
+Los medicamentos también pueden administrarse por vía intramuscular usando únicamente una jeringa.
 
-## Dosing
-Range is based on required analgesia.<br>
-**IV:** Push 0.05-0.1mg/kg or 3.75-10mg<br>
-**IM:** Inject 0.07-0.1mg/kg or 4.25-10mg
+## Dosificación
+El rango depende del nivel de analgesia requerido.<br>
+**IV:** Administrar 0.05-0.1mg/kg o 3.75-10mg<br>
+**IM:** Inyectar 0.07-0.1mg/kg o 4.25-10mg
 
-## Effects
+## Efectos
 {% include git-wiki/components/template/section_med_effects.html %}
 
-#### Potential Complications
-- Bradycardia
-- Hypoventilation
-- Respiratory Arrest
-- Cardiac Arrest
+#### Posibles complicaciones
+- Bradicardia
+- Hipoventilación
+- Parada respiratoria
+- Paro cardíaco
 
-## Indications
-- Severe Pain
+## Indicaciones
+- Dolor intenso
 
-## Contraindications
-- Chest Injury
-- Impaired Breathing Ability
+## Contraindicaciones
+- Lesión torácica
+- Capacidad respiratoria comprometida
 
-# External Links
+# Enlaces externos
 - [Morphine (Wikipedia)](https://en.wikipedia.org/wiki/Morphine)
 - [TFC Pain (TCCC.org.ua)](https://tccc.org.ua/en/guide/tfc-pain)
