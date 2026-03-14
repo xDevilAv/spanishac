@@ -8,14 +8,14 @@ page_category:
 - medication
 - liquid_medication
 
-export_use: "Lowering heart rate for a short time"
+export_use: "Reducir la frecuencia cardíaca durante un corto periodo de tiempo"
 
 infobox_image: "/wiki/image/vial_esmolol.png"
 
 infobox_use_category: "medication"
 infobox_use_selection: "body"
 
-infobox_item_type: "Beta Blocker Medication"
+infobox_item_type: "Medicamento betabloqueador"
 infobox_item_weight: "0.01kg | 0.02lb"
 
 infobox_item_classname: "ACM_Vial_Esmolol"
@@ -37,40 +37,40 @@ infobox_med_effect_hr: -2
 
 {% include git-wiki/components/infobox/item_infobox.html %}
 
-Esmolol is a medication used to lower heart rate and blood pressure.
+Esmolol es un medicamento utilizado para reducir la frecuencia cardíaca y la presión arterial.
 
-# Function
-Esmolol is used in the case of severe tachycardia and hypertension, as a beta-blocker it performs both functions by lowering the force of heart contractions.
+# Función
+Esmolol se utiliza en casos de taquicardia grave e hipertensión. Como betabloqueador, realiza ambas funciones reduciendo la fuerza de las contracciones cardíacas.
 
-Esmolol is administered intravenously with a rapid onset, short peak and duration.
+Esmolol se administra por vía intravenosa con un inicio rápido, pico corto y duración breve.
 
-Esmolol has no effect if administered intramuscularly.
+Esmolol no tiene efecto si se administra por vía intramuscular.
 
-# Usage
+# Uso
 {% include git-wiki/components/template/action_note.html name="Use Syringe" bodypart="Torso and Limbs" category="medication" %}
 {% include git-wiki/components/template/action_note.html name="Push Esmolol" bodypart="Torso and Limbs" category="medication" %}
 
-Medications require a {% include hl.html t="Syringe" i="/wiki/image/syringe_5.png" %} to be able to be drawn and administered.
+Los medicamentos requieren una {% include hl.html t="Syringe" i="/wiki/image/syringe_5.png" %} para poder extraerse y administrarse.
 
-IV access is achieved with IV Catheters or IO devices.
+El acceso IV se consigue mediante catéteres IV o dispositivos IO.
 
-## Dosing
-Push 0.25-0.5mg/kg IV, depending on required effect
+## Dosificación
+Administrar 0.25–0.5mg/kg IV según el efecto requerido.
 
-## Effects
+## Efectos
 {% include git-wiki/components/template/section_med_effects.html %}
 
-#### Potential Complications
-- Bradycardia
-- Hypotension
-- Cardiac Arrest
+#### Posibles complicaciones
+- Bradicardia
+- Hipotensión
+- Paro cardíaco
 
-## Indications
-- Sinus Tachycardia
+## Indicaciones
+- Taquicardia sinusal
 
-## Contraindications
-- Bradycardia
-- Hypotension
+## Contraindicaciones
+- Bradicardia
+- Hipotensión
 
-# External Links
+# Enlaces externos
 - [Esmolol (Wikipedia)](https://en.wikipedia.org/wiki/Esmolol)
