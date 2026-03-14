@@ -3,3 +3,27 @@ layout: "null"
 ---
 
 @import "git-wiki-style.scss";
+
+body {
+    background-color: #000000;
+}
+
+/* barras laterales rojas */
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    width: 8px;
+    height: 100%;
+    background-color: #b30000;
+    z-index: 9999;
+}
+
+body::before {
+    left: 0;
+}
+
+body::after {
+    right: 0;
+}
